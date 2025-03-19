@@ -4,7 +4,7 @@ bash ~/scripts/unzip_seq.sh $fq
 done
 for fq in ~/RNAseq/1_raw_data/*.fastq; do
 echo "running analysis on $fq"
-bash ~/scripts/RNAseq_analysis_1.sh $fq
+bash ~/D_scripts/RNAseq_analysis_1.sh $fq
 done
 # count mapped reads
 echo "Counting mapped reads"
@@ -35,3 +35,7 @@ mkdir ~/RNAseq/4_results/multiqc_report
 multiqc -n ~/RNAseq/4_results/multiqc/multiqc_report_rnaseq ~/RNAseq/4_results/fastqc/*.zip ~/RNAseq/5_logs/*Log.final.out ~/RNAseq/4_results/featurecounts.txt.summary
 
 
+#
+ml R/4.2.0
+R
+Rscript ~/scripts/E_RNAseq_analysis_2.R
