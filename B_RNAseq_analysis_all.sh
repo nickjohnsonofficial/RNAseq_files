@@ -1,5 +1,5 @@
 #!/bin/bash
-for fq in ~/RNAseq/0_zips/*.gz; do
+for fq in ~/C_RNAseq/0_zips/*.gz; do
 bash ~/scripts/unzip_seq.sh $fq
 done
 for fq in ~/RNAseq/1_raw_data/*.fastq; do
