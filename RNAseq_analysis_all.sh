@@ -4,7 +4,7 @@ bash ~/scripts/unzip_seq.sh $fq
 done
 for fq in ~/RNAseq/1_raw_data/*.fastq; do
 echo "running analysis on $fq"
-bash ~/scripts/RNAseq_analysis.sh $fq
+bash ~/scripts/RNAseq_analysis_1.sh $fq
 done
 # count mapped reads
 echo "Counting mapped reads"
