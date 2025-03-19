@@ -5,6 +5,6 @@ Create a folder labeled 'scripts' in your chosen directory, then copy the follow
 
 Create a folder labeled 'Genome_Indices' in your chosen directory. Download the appropriate Genome Indices from https://ensembl.org/info/about/species.html to the 'Genome_Indices' folder.
 
-If you want to run this code, run the NEW_RNAseq_project.sh in the command line by typing bash /path/to/scripts/A_NEW_RNAseq_project.sh
+If you want to run this code, first open NEW_RNAseq_project.sh in Notepad and define your base directory! Then run the NEW_RNAseq_project.sh in the command line by typing bash /path/to/scripts/A_NEW_RNAseq_project.sh
 
 The program will direct you to provide information at various points, but will otherwise run itself.
